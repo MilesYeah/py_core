@@ -1,25 +1,32 @@
 # coding=utf-8
 
 
-class TestBaseException(Exception): pass
+class TestBaseException(Exception):
+    pass
 
 
-class ParseException(TestBaseException): pass
+class ParseException(TestBaseException):
+    pass
 
 
-class VariableNotFound(ParseException): pass
+class VariableNotFound(ParseException):
+    pass
 
 
-class FunctionNotFound(ParseException): pass
+class FunctionNotFound(ParseException):
+    pass
 
 
-class FunctionCallError(ParseException): pass
+class FunctionCallError(ParseException):
+    pass
 
 
-class DispatcherException(TestBaseException): pass
+class DispatcherException(TestBaseException):
+    pass
 
 
-class ManualStopException(DispatcherException): pass
+class ManualStopException(DispatcherException):
+    pass
 
 
 class ScriptExecException(DispatcherException):
@@ -29,8 +36,10 @@ class ScriptExecException(DispatcherException):
         self.value = value
 
 
-class PostScriptExecException(ScriptExecException): pass
+class PostScriptExecException(ScriptExecException):
+    pass
 
 
-class PreScriptExecException(ScriptExecException): pass
+class PreScriptExecException(ScriptExecException):
+    pass
 

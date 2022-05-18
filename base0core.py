@@ -1,14 +1,15 @@
 import os
 
-ProjectName = "CoreOfMiles"
+PACKAGE_NAME = "py_core"
 
+# current package absolute path： CORE
 CORE_ABSPATH = os.path.abspath(__file__)
-CORE_DIR = os.path.dirname(__file__)
+CORE_BASE_PATH = os.path.dirname(__file__)
 CORE_DRIVE = os.path.splitdrive(__file__)[0]
 
-CORE_PARENT_PATH = os.path.split(CORE_DIR)[0]
+CORE_PARENT_PATH = os.path.split(CORE_BASE_PATH)[0]
 
-PROJECT_ROOT = CORE_PARENT_PATH
+PROJ_BASE_PATH = CORE_PARENT_PATH
 
 
 def exec_str2cmd(func: str) -> str:

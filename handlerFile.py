@@ -9,6 +9,10 @@ from handlerDatetime import timestamp2datetime
 # from handlerLogger import logger
 
 
+class SheetNotFoundError(Exception):
+    pass
+
+
 def save_binary_to_file(bytes, fpn):
     """将二进制内容存储到文件"""
     fp, fn = os.path.split(fpn)
